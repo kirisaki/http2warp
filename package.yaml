@@ -21,12 +21,18 @@ description:         Please see the README on GitHub at <https://github.com/kiri
 
 dependencies:
 - base >= 4.7 && < 5
+- http-types
+- case-insensitive
+- text
+- wai
+- warp
+- warp-tls
 
 library:
   source-dirs: src
 
 executables:
-  http2warp-exe:
+  http2warp:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
